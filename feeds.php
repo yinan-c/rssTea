@@ -111,7 +111,7 @@ echo "\n"."Getting feed from: ". $url." \n";
 }
 usort($feeda, fn($a, $b) => $b['date'] <=> $a['date']);
 $outhtml = '';
-$outoptions = '<option value="All">All Channels</option>';
+$outoptions = '<option value="All">Sources</option>';
 $outchannels = array();
 $index = 0;
 foreach($feeda as $post) {
