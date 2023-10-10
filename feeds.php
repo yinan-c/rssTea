@@ -128,7 +128,8 @@ else {
   $domain = parse_url($post['link'], PHP_URL_HOST);
   $outhtml .= '<div class="leftpan"><img src="https://s2.googleusercontent.com/s2/favicons?domain='.urlencode($domain).'" alt="'.$post['title'].'"/><span class="domain">'.$domain.'</span></div>';
 }
-$outhtml .= '<div class="rightpan"><div class="feedname"><span class="channel">'.$post['ch'].'</span> &bull; <span class="date">'.date('M d, Y',$post['date']).'</span></div>
+//    <span style="float: right; font-size: 0.8em; color: #888;">2023-09-07</span>
+$outhtml .= '<div class="rightpan"><div style="font-size: 0.9em" class="feedname"><span class="channel">'.$post['ch'].'</span>  <span style="float: right; font-size: 0.9em; color: #888;">'.date('Y-m-d',$post['date']).'</span></div>
 <h2><a href="'.$post['link'].'" target="_blank">'.$post['title'].'</a></h2>';
 if(!empty($post['audio'])){
 $outhtml .= '<div class="audio">
