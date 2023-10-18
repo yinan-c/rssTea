@@ -7,9 +7,9 @@ on:
     paths:
       - 'feeds.php'
       - 'base.html'
-
+# every day
   schedule:
-  - cron: '0 */2 * * *'
+  - cron: '0 0 * * *'
 
 
   # Allows you to run this workflow manually from the Actions tab
